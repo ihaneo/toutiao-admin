@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <h1>头条发布内容</h1>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name:'App'
+  name:'App',
+  data() {
+      return {
+        num: 1
+      };
+  },
+  methods: {
+      handleChange(value) {
+        console.log(value);
+      }
+  }
 }
 </script>
 
